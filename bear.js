@@ -30,7 +30,10 @@ const bears = [
 ];
 
 bears.forEach((bear)=> console.log(bear.type));
-bears.forEach((bear)=> console.log(bear.location));
 bears.forEach((bear)=> console.log(bear.color));
 bears.forEach((bear)=> console.log(bear.diet));
 bears.forEach((bear)=> console.log(bear.endangered));
+const current = bears.filter((bear)=> bear.endangered !== true);
+console.log(current); 
+// const food = bears.filter((bear) => bear.diet !== fish);
+// console.log(food); //THIS ISN'T WORKIG 
