@@ -29,17 +29,11 @@ const bears = [
     },
 ];
 
-function animal(x){
-    console.log(x[0]);
-    console.log(x[1]);
-    console.log(x[2]);
-    console.log(x[3]);
-    console.log(x[4]);
-}
+
 
 
 bears.forEach((bear)=> console.log(bear.type));
-bears.forEach((bear)=>animal(bear.diet));
+bears.forEach((bear)=> bear.diet.forEach((food) => console.log(food)) );
 
 const food = bears.filter((bear) => bear.endangered !== true);
 console.log(food);
